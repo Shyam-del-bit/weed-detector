@@ -1,0 +1,4 @@
+Flask
+tensorflow  # Or the version you're using for your CNN model
+pillow  # For image processing
+numpy

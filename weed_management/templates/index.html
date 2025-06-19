@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weed Detector</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="bg-gradient-to-br from-green-100 to-emerald-200 min-h-screen flex flex-col items-center justify-center p-4">
+    <div class="bg-white shadow-2xl rounded-2xl p-8 w-full max-w-md">
+        <h1 class="text-3xl font-bold text-center text-green-700 mb-6">
+            <i class="fas fa-leaf mr-2"></i>Weed Detector
+        </h1>
+
+        <!-- Image Upload Form -->
+        <form id="upload-form" action="/" method="POST" enctype="multipart/form-data" class="mb-6">
+            <div class="flex space-x-4 mb-4">
+                <button type="button" id="camera-btn" class="flex-1 bg-green-500 text-white py-2 rounded-lg hover:bg-green-600 transition">
+                    <i class="fas fa-camera mr-2"></i>Open Camera
+                </button>
+                
+                <label class="flex-1 block">
+                    <input type="file" name="file" id="file-input" accept="image/*" class="hidden" />
+                    <span class="block w-full bg-blue-500 text-white text-center py-2 rounded-lg hover:bg-blue-600 transition cursor-pointer">
+                        <i class="fas fa-upload mr-2"></i>Upload Image
+                    </span>
+                </label>
+            </div>
+
+            <!-- Camera Preview -->
+            <video id="camera-feed" class="w-full rounded-lg shadow-md mb-4 hidden" autoplay playsinline></video>
+        </form>
+
+        <!-- Prediction Result Section -->
+       <!-- Prediction Result Section -->
+<!-- Prediction Result Section -->
+{% if img_data %}
+<div class="bg-green-50 border-l-4 border-green-500 p-4 rounded-r-lg mb-4">
+    <h2 class="text-xl font-semibold text-green-800 mb-2">
+        <i class="fas fa-seedling mr-2"></i>Detected Weed
+    </h2>
+    <p class="text-gray-700 font-bold text-lg">
+        {{ predicted_name }}
+    </p>
+
+    <!-- Ensure weed_info is not None -->
+    {% if weed_info %}
+    <div class="mt-4 text-gray-700">
+        <p><strong>Common Name:</strong> {{ weed_info.get("common_name", "Unknown") }}</p>
+        <p><strong>Scientific Name:</strong> {{ weed_info.get("scientific_name", "Unknown") }}</p>
+        <p><strong>Description:</strong> {{ weed_info.get("description", "No description available.") }}</p>
+        <p><strong>Uses:</strong> {{ weed_info.get("uses", "N/A") }}</p>
+    </div>
+    {% else %}
+    <p class="text-red-600">No weed information found.</p>
+    {% endif %}
+</div>
+<img src="data:image/jpeg;base64,{{ img_data }}" class="w-full rounded-lg shadow-md" />
+{% endif %}
+
+
+
+        <!-- Error Message -->
+        {% if error %}
+        <div class="bg-red-50 border-l-4 border-red-500 p-4 rounded-r-lg mt-4">
+            <p class="text-red-700">{{ error }}</p>
+        </div>
+        {% endif %}
+    </div>
+
+    <script>
+        const uploadForm = document.getElementById('upload-form');
+        const fileInput = document.getElementById('file-input');
+        const cameraBtn = document.getElementById('camera-btn');
+        const cameraFeed = document.getElementById('camera-feed');
+
+        // File input change event
+        fileInput.addEventListener('change', () => {
+            uploadForm.submit();
+        });
+
+        // Camera capture function
+        cameraBtn.addEventListener('click', async () => {
+            try {
+                const stream = await navigator.mediaDevices.getUserMedia({ video: true });
+                cameraFeed.srcObject = stream;
+                cameraFeed.classList.remove('hidden');
+                cameraBtn.textContent = 'Capture';
+                
+                cameraBtn.onclick = () => {
+                    const canvas = document.createElement('canvas');
+                    canvas.width = cameraFeed.videoWidth;
+                    canvas.height = cameraFeed.videoHeight;
+                    canvas.getContext('2d').drawImage(cameraFeed, 0, 0);
+                    
+                    canvas.toBlob((blob) => {
+                        const file = new File([blob], 'captured_image.jpg', {type: 'image/jpeg'});
+                        const dataTransfer = new DataTransfer();
+                        dataTransfer.items.add(file);
+                        fileInput.files = dataTransfer.files;
+                        
+                        stream.getTracks().forEach(track => track.stop());
+                        cameraFeed.classList.add('hidden');
+                        cameraBtn.textContent = 'Open Camera';
+                        
+                        uploadForm.submit();
+                    }, 'image/jpeg');
+                };
+            } catch (error) {
+                alert('Error accessing camera: ' + error);
+            }
+        });
+    </script>
+</body>
+</html>

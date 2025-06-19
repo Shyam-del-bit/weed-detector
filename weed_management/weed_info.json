@@ -1,0 +1,195 @@
+{
+    "Aerva lanata": {
+      "common_name": "Aerva lanata",
+      "scientific_name": "Aerva lanata",
+      "description": "Aerva lanata, commonly known as 'Chakra' or 'Indian Cotton', is a medicinal plant found in tropical regions.",
+      "uses": "Used in traditional medicine for various purposes including treating fever, and skin diseases."
+    },
+    "Amaranthus spinosus123": {
+      "common_name": "Spiny Amaranth",
+      "scientific_name": "Amaranthus spinosus",
+      "description": "Spiny Amaranth is a weed that is commonly found in disturbed soils and gardens.",
+      "uses": "Traditionally used in folk medicine and also as a food source in some cultures."
+    },
+    "Calotropis plant123": {
+      "common_name": "Calotropis",
+      "scientific_name": "Calotropis gigantea",
+      "description": "A plant species widely used in traditional medicine for its analgesic properties.",
+      "uses": "Used in traditional medicine to treat ailments like fever, wounds, and inflammation."
+    },
+    "Chinee apple": {
+      "common_name": "Chinee Apple",
+      "scientific_name": "Malvaceae",
+      "description": "Chinee apple is a species of invasive plant known for its rapid spread.",
+      "uses": "Used in some cultures for medicinal purposes, although considered invasive."
+    },
+    "Cleome viscosa": {
+      "common_name": "Sticky Spiderflower",
+      "scientific_name": "Cleome viscosa",
+      "description": "Cleome viscosa is a wildflower that can be found in tropical and subtropical areas.",
+      "uses": "Has medicinal properties and is used in traditional medicine in some cultures."
+    },
+    "Cyprus rotundus": {
+      "common_name": "Purple Nutsedge",
+      "scientific_name": "Cyperus rotundus",
+      "description": "A perennial weed commonly found in agricultural fields, gardens, and grasslands.",
+      "uses": "Has medicinal properties and is used in some regions for treating digestive disorders."
+    },
+    "Datura": {
+      "common_name": "Datura",
+      "scientific_name": "Datura stramonium",
+      "description": "Datura is a genus of poisonous plants, often used in traditional medicine.",
+      "uses": "Although toxic, it is used in some regions for its psychoactive properties."
+    },
+    "Lantana": {
+      "common_name": "Lantana",
+      "scientific_name": "Lantana camara",
+      "description": "A shrub widely distributed in tropical and subtropical areas, commonly found in gardens.",
+      "uses": "Used as a decorative plant but can also be toxic to animals."
+    },
+    "Martynia Annua111": {
+      "common_name": "Martynia Annua",
+      "scientific_name": "Martynia annua",
+      "description": "Martynia Annua is a plant native to the Americas, often used in folk medicine.",
+      "uses": "Used for medicinal purposes and as an ornamental plant."
+    },
+    "Negative": {
+      "common_name": "No Weed Detected",
+      "scientific_name": "None",
+      "description": "No weed was detected in the image.",
+      "uses": "N/A"
+    },
+    "Parkinsonia": {
+      "common_name": "Parkinsonia",
+      "scientific_name": "Parkinsonia aculeata",
+      "description": "A shrub native to the southwestern United States and Mexico.",
+      "uses": "Used in traditional medicine for its anti-inflammatory properties."
+    },
+    "Parthenium": {
+      "common_name": "Parthenium",
+      "scientific_name": "Parthenium hysterophorus",
+      "description": "A highly invasive weed, considered toxic to humans and livestock.",
+      "uses": "Despite its toxicity, it is sometimes used in traditional medicine."
+    },
+    "Phyllanthus nirur": {
+      "common_name": "Phyllanthus niruri",
+      "scientific_name": "Phyllanthus niruri",
+      "description": "Known as the stonebreaker, it's used to treat kidney stones.",
+      "uses": "Widely used in traditional medicine for its diuretic and liver-protecting effects."
+    },
+    "Prickly acacia": {
+      "common_name": "Prickly Acacia",
+      "scientific_name": "Vachellia nilotica",
+      "description": "A tree species that is invasive in some regions.",
+      "uses": "Used for its medicinal properties and as timber."
+    },
+    "Pycerus polystachyos": {
+      "common_name": "Multiple-stemmed Papyrus",
+      "scientific_name": "Cyperus polystachyos",
+      "description": "A species of sedge native to tropical regions.",
+      "uses": "Used in traditional crafting and in some herbal medicines."
+    },
+    "Rubber vine": {
+      "common_name": "Rubber Vine",
+      "scientific_name": "Cryptostegia grandiflora",
+      "description": "An invasive plant known for its rapid spread across landscapes.",
+      "uses": "The sap has been traditionally used in various cultures for medicinal purposes."
+    },
+    "Siam weed": {
+      "common_name": "Siam Weed",
+      "scientific_name": "Chromolaena odorata",
+      "description": "An invasive weed that has become a problem in tropical and subtropical areas.",
+      "uses": "Sometimes used for its medicinal properties but considered harmful to biodiversity."
+    },
+    "Snake weed": {
+      "common_name": "Snake Weed",
+      "scientific_name": "Stachytarpheta cayennensis",
+      "description": "A weed commonly found in tropical areas.",
+      "uses": "Used in folk medicine to treat a variety of ailments."
+    },
+    "Sorghum halepense": {
+      "common_name": "Johnsongrass",
+      "scientific_name": "Sorghum halepense",
+      "description": "An invasive species often found in fields and along roadsides.",
+      "uses": "Used as fodder in some regions but can be toxic in large amounts."
+    },
+    "Taraxacum officinale": {
+      "common_name": "Dandelion",
+      "scientific_name": "Taraxacum officinale",
+      "description": "A common weed found in lawns and fields.",
+      "uses": "Used in herbal medicine for its detoxifying properties."
+    },
+    "Trianthema portulacastrum": {
+      "common_name": "Purple Carpet",
+      "scientific_name": "Trianthema portulacastrum",
+      "description": "A groundcover weed commonly found in warm climates.",
+      "uses": "Used as groundcover in some landscaping applications."
+    },
+    "Tridax procumbens": {
+      "common_name": "Tridax",
+      "scientific_name": "Tridax procumbens",
+      "description": "A plant commonly found in tropical and subtropical regions.",
+      "uses": "Used in herbal medicine for its wound-healing properties."
+    },
+    "Xanthium strumarium": {
+      "common_name": "Cocklebur",
+      "scientific_name": "Xanthium strumarium",
+      "description": "A weed commonly found in agricultural fields and disturbed soils.",
+      "uses": "Has medicinal properties and is sometimes used to treat certain diseases."
+    },
+    "abutilon hirtum123": {
+      "common_name": "Velvetleaf",
+      "scientific_name": "Abutilon hirtum",
+      "description": "A plant commonly found in tropical and subtropical climates.",
+      "uses": "Used in some regions for its fibers and medicinal properties."
+    },
+    "acalypha indica123": {
+      "common_name": "Indian Copperleaf",
+      "scientific_name": "Acalypha indica",
+      "description": "A weed that can be found in tropical and subtropical regions.",
+      "uses": "Used in traditional medicine in some cultures."
+    },
+    "cuscuta": {
+      "common_name": "Dodder",
+      "scientific_name": "Cuscuta",
+      "description": "A parasitic plant that attaches to host plants.",
+      "uses": "Used in folk medicine for various ailments."
+    },
+    "digitaria sanguinalis": {
+      "common_name": "Crabgrass",
+      "scientific_name": "Digitaria sanguinalis",
+      "description": "A common grass weed found in lawns and agricultural fields.",
+      "uses": "Sometimes used in herbal medicine."
+    },
+    "echinochloa colona": {
+      "common_name": "Jungle Rice",
+      "scientific_name": "Echinochloa colona",
+      "description": "An invasive weed that competes with crops in agricultural fields.",
+      "uses": "Used in traditional medicine in some cultures."
+    },
+    "eichhornia crassipe": {
+      "common_name": "Water Hyacinth",
+      "scientific_name": "Eichhornia crassipe",
+      "description": "A floating aquatic plant considered invasive in many areas.",
+      "uses": "Used in some regions for its medicinal properties."
+    },
+    "euphorbia prostrat": {
+      "common_name": "Prostrate Spurge",
+      "scientific_name": "Euphorbia prostrata",
+      "description": "A weed commonly found in lawns and disturbed soils.",
+      "uses": "Used in traditional medicine in some cultures."
+    },
+    "portulaca oleracea": {
+      "common_name": "Purslane",
+      "scientific_name": "Portulaca oleracea",
+      "description": "A common weed that can be eaten as a vegetable.",
+      "uses": "Used for its health benefits and high omega-3 content."
+    },
+    "serpyllifolia123": {
+      "common_name": "Thyme-leafed Speedwell",
+      "scientific_name": "Veronica serpyllifolia",
+      "description": "A weed commonly found in lawns.",
+      "uses": "Sometimes used in traditional medicine for its calming properties."
+    }
+  }
+  
